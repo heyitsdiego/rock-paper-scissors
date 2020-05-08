@@ -1,0 +1,127 @@
+body {
+  box-sizing: border-box;
+  background: linear-gradient(177deg, rgba(2,0,36,1) 0%, rgba(60,3,140,1) 51%, rgba(0,212,255,1) 100%);
+  color: #ffffff;
+  font-family: Futura;
+}
+button {
+  cursor: pointer;
+  border-radius: 25px;
+}
+button:hover {
+  background: linear-gradient(to left, #743ad5 0%, #d53a9d 100%);
+  border: none;
+}
+.container {
+  max-width: 900px;
+  text-align: center;
+  width: 50%;
+  margin: 2rem auto;
+}
+#result-paragraph {
+  font-size: 2rem;
+}
+.gradient-button {
+  margin: 10px;
+  font-size: 20px;
+  padding: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #FFF;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  width: 200px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  display: inline-block;
+  background: linear-gradient(to left, #743ad5 0%, #d53a9d 100%)
+}
+.round {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 9vh;
+}
+.shapes {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 9vh;
+}
+
+#userScore, #computerScore {
+  animation-name: example;
+  animation-duration: 1s;
+}
+@keyframes example {
+  0%   {color: #743ad5 }
+  25%  {color:#d53a9d}
+}
+
+@media (max-width: 700px) {  
+  html {
+    font-size: .8em;
+  }
+  #result-paragraph {
+    font-size: 1.5rem;
+  }
+  .keys {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .userScore, .computerScore, .computerPlay {
+    font-size: .8rem;
+    border: .2rem solid #F2220F;;
+    border-radius: .5rem;
+    width: 7rem;
+    text-align: center;
+    font-weight: bold;
+  }
+  button {
+    /* border-radius: .5rem; */
+    margin: .5rem;
+    padding: .2rem .2rem;
+  }
+  .randomShape  {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 5vh;
+    align-items: center;
+    justify-content: center;
+  }
+  .round {
+    margin-top: 5vh;
+  }
+  .responsive {
+    width: 70%;
+    height: auto;
+  }
+  .shapes {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 5vh;
+  }
+  .results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* h1 {
+    font-size: calc(0.80em + 1vmin);
+}
+h2 {
+  font-size: calc(0.55em + 1vmin);
+}
+.responsive {
+  width: 100%;
+  height: auto;
+} */
