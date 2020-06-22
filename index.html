@@ -2,42 +2,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Rock-Paper-Scissors</title>
+  <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <h1>Rock Paper Scissors</h1>
-    <h2>Best of 5</h2>
+    <header>
+      <h1>Rock Paper Scissors</h1>
+      <h2>Best of 5</h2>
+    </header>
     <div class="round">
-      <div>
-        <h2 id="userScore">0</h2>
+      <div class="user-score">
+        <h2 id="user-score">0</h2>
         <h2>You</h2>
       </div>
-      <div>
-        <img id = "computer-image" src="images/computer.png" class="responsive">
+      <div class="computer-image">
+        <img id="computer-image" src="assets/computer.png" alt="computer emoji">
       </div>
-      <div>
-        <h2 id="computerScore">0</h2>
-        <h2>AI</h2>
+      <div class="computer-score">
+        <h2 id="computer-score">0</h2>
+        <h2>Computer</h2>
       </div>
     </div>
     <div class="shapes">
       <button class data-key="rock">
-        <img src="images/rock.png" alt="rock shape" data-key="rock" class="responsive">
+        <img src="assets/rock.png" alt="rock shape" data-key="rock" class="responsive">
       </button>
       <button class="paper" data-key="paper">
-        <img src="images/paper.png" alt="paper shape" data-key="paper" class="responsive">
+        <img src="assets/paper.png" alt="paper shape" data-key="paper" class="responsive">
       </button>
       <button class="scissors" data-key="scissors">
-        <img src="images/scissors.png" alt="scissors shape" data-key="scissors" class="responsive">
+        <img src="assets/scissors.png" alt="scissors shape" data-key="scissors" class="responsive">
       </button>
     </div>
-    <div class="results">
+    <div class="result">
       <p id="result-paragraph"></p>
-
-    </div>
+   </div>
   </div>
 </body>
-<script src="javascript.js"></script>
+<script src="script.js"></script>
 </html>
