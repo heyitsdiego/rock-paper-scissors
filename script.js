@@ -79,7 +79,7 @@ function playRound (userSelection, computerSelection) {
           }
   }
 }
-
+// 
 function playGame (e) {
   const userChoice = e.target.dataset.key;
   const computer = computerChoice();
