@@ -9,6 +9,7 @@ body {
 header {
   text-align: center;
   margin-bottom: 3vh;
+  height: 15%;
 }
 
 h1 {
@@ -31,14 +32,15 @@ button:hover {
 
 .container {
   width: 90%;
+  height: 98%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 .round {
+  height: 35%;
   text-align: center;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -74,6 +76,13 @@ grid-column-start: 3;
   display: flex;
   flex-direction: row;
   margin-bottom: 2vh;
+  height: 15%;
+  justify-content: space-between;
+}
+
+.shapes button {
+  width: 30%;
+  height: 100%;
 }
 
 .responsive {
@@ -100,6 +109,7 @@ grid-column-start: 3;
 }
 
 .result {
+  height: 25%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -111,44 +121,70 @@ grid-column-start: 3;
 }
 
 /* Media Queries */
-@media (min-width: 768px) {
+@media (min-width: 576px) {
+
+  header {
+    text-align: center;
+    width: 100%;
+  }
+  
   h1 {
-  font-size: 3vw;
-}
-
+    font-size: 2em;
+  }
+  
   h2 {
-  font-size: 2vw;
-}
+    font-size: 1.5em;
+  }
+  
+  .container {
+    width: 90%;
+    height: 98%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+  }
+  
+  .round {
+    height: 35%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    margin-bottom: 3vh;
+    width: 80%;
+  }
+  
+  .shapes {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2vh;
+    height: 15%;
+    justify-content: space-between;
+    width: 700px;
+  }
 
-header {
-  margin-bottom: 2em;
-}
-
-.round {
-  text-align: center;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;
-  margin-bottom: 5vh;
-}
-
-.computer-image {
-grid-row-start: auto;
-grid-column: auto;
-margin: auto 3em;
-}
-
-.user-score {
-grid-row-start: auto;
-}
-
-.computer-score {
-grid-row-start: auto;
-grid-column-start: auto;
-}
-
-.result p {
-  font-size: 3vw;
-  font-weight: bold;
-}
+  button img {
+    max-width: 90px;
+  }
+  
+  .shapes button {
+    width: 30%;
+    height: 100%;
+    max-width: 180px;
+  }
+  
+  .result {
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+  }
+  
+  .result p {
+    font-size: 2.5vw;
+    margin: .5em;
+  }
 }
